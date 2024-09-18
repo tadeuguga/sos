@@ -1,0 +1,79 @@
+/* Estilos para o corpo da página */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('./imagens/Unknown-3.jpeg'); /* Caminho da imagem de fundo da página */
+    background-size: cover; /* A imagem de fundo cobrirá toda a página */
+    background-position: center; /* A imagem de fundo será centralizada */
+    background-repeat: no-repeat; /* Não repetir a imagem de fundo */
+    height: 100vh; /* Altura da tela completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o container geral */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para o círculo grande */
+.circulo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #3498db; /* Cor de fallback */
+    background-image: url('./imagens/logo-2.png'); /* Imagem de fundo do círculo grande */
+    background-size: cover; /* A imagem ajusta-se ao tamanho do círculo */
+    background-position: center; /* Centraliza a imagem no círculo */
+    background-repeat: no-repeat; /* Evita repetição da imagem */
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Estilo para os círculos menores */
+.circulo-menor {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #e74c3c;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Estilo para os ícones dentro dos círculos menores */
+.circulo-menor i {
+    font-size: 20px;
+    color: white; /* Cor do ícone */
+}
+
+/* Estilo para o texto acima dos círculos menores */
+.circulo-menor span.texto-circulo {
+    position: absolute;
+    top: -20px; /* Posição do texto acima do círculo */
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+/* Estilo para o canvas onde as linhas são desenhadas */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
